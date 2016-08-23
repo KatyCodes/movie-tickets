@@ -10,6 +10,35 @@
     <title>Movie Tickets</title>
   </head>
   <body>
-    
+    <div class="jumbotron">
+      <h2>Movie Theater</h2>
+    </div>
+    <div class="container">
+      <form>
+        <h4>Select a movie:</h4>
+        <select class="form-control" id="movies">
+          <option value="10">Suicide Squad</option>
+          <option value="10">Kubo and the Two Strings</option>
+          <option value="5">Lion King</option>
+          <option value="5">Citizen Kane</option>
+        </select>
+        <h4>Select a time:</h4>
+        <select class="form-control" id="time">
+          <option value="-2">Morning (10am-noon)</option>
+          <option value="5">Afternoon (noon-5pm)</option>
+          <option value="15">Evening (5pm-midnight)</option>
+        </select>
+        <h4>Select age:</h4>
+        <select class="form-control" id="age">
+          <option value="-1">Students(with valid ID)</option>
+          <option value="5">Adult (18-65)</option>
+          <option value="-2">Seniors (65+)</option>
+        </select>
+        <button class="btn btn-success" type="submit">Submit</button>
+      </form>
+      <div>
+        <h4>Your ticket price is:<span class="finalPrice"></span></h4>
+      </div>
+    </div>
   </body>
 </html>
